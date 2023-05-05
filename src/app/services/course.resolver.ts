@@ -1,5 +1,5 @@
 import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
-import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import {Course} from '../model/course';
 import {Observable, of} from 'rxjs';
 import {CoursesService} from './courses.service';
@@ -8,7 +8,7 @@ import {isPlatformServer} from '@angular/common';
 
 
 @Injectable()
-export class CourseResolver implements Resolve<Course> {
+export class CourseResolver  {
 
     constructor(private coursesService: CoursesService) {
 
